@@ -1,0 +1,10 @@
+**/bin/
+**/obj/
+**/build/
+**/target/
+**/node_modules/
+**/.next/
+**/.env.local
+**/__pycache__/
+.idea/
+.vs/

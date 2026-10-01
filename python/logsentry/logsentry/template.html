@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>LogSentry — Rapport de connexions</title>
+  <style>
+    :root { --bg:#0c111b; --panel:#141d2b; --line:#29364a; --text:#eaf1fa; --muted:#a3b2c7; --mint:#65e4bd; --amber:#ffd18b; --red:#ff9eaa; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font:15px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif; }
+    main { max-width:1120px; margin:0 auto; padding:42px 28px; }
+    header { display:flex; justify-content:space-between; align-items:center; gap:20px; padding-bottom:30px; border-bottom:1px solid var(--line); }
+    .brand { font-size:24px; font-weight:800; letter-spacing:-1px; }
+    .brand span { color:var(--mint); }
+    .eyebrow { color:var(--mint); text-transform:uppercase; letter-spacing:2px; font-size:11px; font-weight:700; }
+    .tag { border:1px solid var(--line); border-radius:100px; padding:5px 13px; color:var(--muted); font-size:12px; }
+    h1 { font-size:clamp(30px,5vw,46px); line-height:1.15; letter-spacing:-1.5px; margin:12px 0; }
+    h2 { font-size:21px; margin:0 0 18px; letter-spacing:-.4px; }
+    h3 { font-size:16px; margin:17px 0 5px; }
+    p { margin:0; }
+    .intro { padding:35px 0 26px; }
+    .intro p,.muted { color:var(--muted); }
+    .source { overflow-wrap:anywhere; }
+    .stats { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin:0 0 24px; }
+    .stat { background:var(--panel); border:1px solid var(--line); padding:20px; border-radius:13px; }
+    .stat span { color:var(--muted); font-size:12px; }
+    .stat strong { display:block; font-size:37px; line-height:1.3; letter-spacing:-1px; margin-top:7px; }
+    .stat.fail strong { color:var(--amber); }.stat.alerts strong { color:var(--red); }
+    .context { display:flex; flex-wrap:wrap; gap:12px 28px; color:var(--muted); font-size:12px; padding:0 0 27px; }
+    .section { margin:12px 0 30px; }
+    .section-heading { display:flex; align-items:center; justify-content:space-between; gap:14px; }
+    .section-heading span { color:var(--muted); font-size:12px; }
+    .alert-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+    .alert { padding:20px; border:1px solid var(--line); border-left:3px solid var(--amber); background:var(--panel); border-radius:10px; overflow-wrap:anywhere; }
+    .alert.high { border-left-color:var(--red); }
+    .alert-top { display:flex; justify-content:space-between; flex-wrap:wrap; gap:9px; align-items:center; }
+    .badge { color:var(--amber); background:#3b3022; border-radius:4px; font-size:10px; letter-spacing:1px; padding:3px 8px; font-weight:800; }
+    .high .badge { color:var(--red); background:#3c2634; }
+    .alert p { color:var(--muted); font-size:13px; }.alert small { color:var(--muted); font-size:11px; display:block; margin-top:13px; }
+    code { font:13px ui-monospace,SFMono-Regular,Consolas,monospace; }
+    .table-wrap { overflow-x:auto; border:1px solid var(--line); border-radius:12px; }
+    table { border-collapse:collapse; width:100%; min-width:420px; background:var(--panel); }
+    th { text-align:left; color:var(--muted); font-size:11px; letter-spacing:1px; text-transform:uppercase; background:#172233; }
+    th,td { padding:13px 20px; border-bottom:1px solid var(--line); } tr:last-child td { border:0; }
+    .failure-cell { display:flex; align-items:center; gap:15px; }.failure-cell span { min-width:20px; }
+    .track { width:150px; max-width:18vw; background:#243147; height:5px; border-radius:4px; }.track i { display:block; height:5px; background:var(--amber); border-radius:4px; }
+    .note { border:1px dashed #40516b; padding:18px 20px; border-radius:10px; color:var(--muted); font-size:12px; }
+    .note strong { color:var(--text); }.empty { padding:22px; color:var(--muted); border:1px solid var(--line); border-radius:10px; }
+    footer { color:var(--muted); font-size:11px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; margin-top:30px; }
+    @media(max-width:680px) { main { padding:24px 16px; }.stats { grid-template-columns:repeat(2,1fr); }.alert-grid { grid-template-columns:1fr; } header .tag { display:none; }.section-heading { align-items:baseline; } }
+    @media print { :root { --bg:white; --panel:white; --line:#bbb; --text:#111; --muted:#444; --mint:#17634d; --amber:#784c06; --red:#94152a; } body { print-color-adjust:exact; } main { padding:0; }.alert,.stat { break-inside:avoid; } th { background:#eee; } }
+  </style>
+</head>
+<body><main>
+  <header><div class="brand">◈ Log<span>Sentry</span></div><span class="tag">PYTHON · ANALYSE LOCALE</span></header>
+  <section class="intro"><div class="eyebrow">Rapport de connexions</div><h1>Les signaux à examiner.</h1><p class="source">Source : <strong>$source</strong> · Données traitées localement.</p></section>
+  <section class="stats" aria-label="Indicateurs">
+    <div class="stat"><span>TENTATIVES</span><strong>$total</strong></div>
+    <div class="stat"><span>IP UNIQUES</span><strong>$unique_ips</strong></div>
+    <div class="stat fail"><span>ÉCHECS · $rate %</span><strong>$failure</strong></div>
+    <div class="stat alerts"><span>ALERTES</span><strong>$alert_count</strong></div>
+  </section>
+  <div class="context"><span>$success connexions réussies</span><span>Période UTC : $start → $end</span></div>
+  <section class="section"><div class="section-heading"><h2>Événements signalés</h2><span>Seuil : $threshold échecs / $window min</span></div><div class="alert-grid">$alerts</div></section>
+  <section class="section"><h2>Activité par adresse IP</h2><div class="table-wrap"><table><thead><tr><th scope="col">Adresse IP</th><th scope="col">Échecs</th><th scope="col">Réussites</th></tr></thead><tbody>$rows</tbody></table></div></section>
+  <aside class="note"><strong>Comment lire ces alertes ?</strong> Une rafale est la fenêtre contenant le plus d'échecs pour une IP. Un succès est signalé après le seuil d'échecs pour le même utilisateur et la même IP, dans la fenêtre configurée et depuis leur dernier succès. Une alerte est un indice à examiner, pas une preuve d'intrusion. L'absence d'alerte ne garantit pas l'absence d'attaque.</aside>
+  <footer><span>LogSentry / v1.0.0</span><span>Rapport autonome · Aucun appel réseau</span></footer>
+</main></body></html>

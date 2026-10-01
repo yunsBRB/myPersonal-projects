@@ -1,0 +1,24 @@
+{
+    "home": {
+        "title": "Explore by need",
+        "scan_cta": "Scan a product"
+    },
+    "scan": {
+        "instruction": "Place the barcode in the frame",
+        "not_found": "Product not found"
+    },
+    "product": {
+        "nutriscore": "Nutri-Score",
+        "nova": "NOVA Group",
+        "additives": "Detected Additives",
+        "allergens": "Allergens"
+    },
+    "premium": {
+        "title": "Level up your health",
+        "features": {
+            "ai_analysis": "AI Ingredient Analysis",
+            "alternatives": "Unlimited healthy alternatives",
+            "health_impact": "Detailed Health Impact"
+        }
+    }
+}

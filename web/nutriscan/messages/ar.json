@@ -1,0 +1,24 @@
+{
+    "home": {
+        "title": "استكشف حسب احتياجك",
+        "scan_cta": "قم بمسح منتج"
+    },
+    "scan": {
+        "instruction": "ضع الباركود في الإطار",
+        "not_found": "المنتج غير موجود"
+    },
+    "product": {
+        "nutriscore": "Nutri-Score",
+        "nova": "مجموعة NOVA",
+        "additives": "المضافات المكتشفة",
+        "allergens": "المواد المسببة للحساسية"
+    },
+    "premium": {
+        "title": "ارتق بصحتك إلى المستوى التالي",
+        "features": {
+            "ai_analysis": "تحليل المكونات بالذكاء الاصطناعي",
+            "alternatives": "بدائل صحية غير محدودة",
+            "health_impact": "تأثير صحي مفصل"
+        }
+    }
+}

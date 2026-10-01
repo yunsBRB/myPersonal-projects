@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.idea/
+.vscode/
+.DS_Store
+*.egg-info/
+build/
+dist/
+reports/
+rapport*.html
+rapport*.json
+# Place tes journaux personnels ici ; la démo reste versionnée.
+private-data/
+.env

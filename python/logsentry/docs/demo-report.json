@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "settings": {
+    "threshold": 5,
+    "window_minutes": 5
+  },
+  "summary": {
+    "total": 24,
+    "success": 8,
+    "failure": 16,
+    "unique_ips": 6,
+    "alert_count": 3,
+    "started_at": "2026-09-08T08:00:00Z",
+    "ended_at": "2026-09-08T08:35:00Z"
+  },
+  "alerts": [
+    {
+      "kind": "success_after_failures",
+      "severity": "high",
+      "ip": "203.0.113.42",
+      "users": [
+        "admin"
+      ],
+      "failed_attempts": 6,
+      "started_at": "2026-09-08T08:05:00Z",
+      "ended_at": "2026-09-08T08:08:00Z"
+    },
+    {
+      "kind": "failure_burst",
+      "severity": "warning",
+      "ip": "203.0.113.42",
+      "users": [
+        "admin"
+      ],
+      "failed_attempts": 6,
+      "started_at": "2026-09-08T08:05:00Z",
+      "ended_at": "2026-09-08T08:07:30Z"
+    },
+    {
+      "kind": "failure_burst",
+      "severity": "warning",
+      "ip": "198.51.100.23",
+      "users": [
+        "admin",
+        "guest",
+        "root",
+        "test"
+      ],
+      "failed_attempts": 7,
+      "started_at": "2026-09-08T08:15:00Z",
+      "ended_at": "2026-09-08T08:17:00Z"
+    }
+  ],
+  "ip_stats": [
+    {
+      "ip": "198.51.100.23",
+      "failure": 7,
+      "success": 0
+    },
+    {
+      "ip": "203.0.113.42",
+      "failure": 6,
+      "success": 1
+    },
+    {
+      "ip": "192.0.2.30",
+      "failure": 2,
+      "success": 1
+    },
+    {
+      "ip": "192.0.2.20",
+      "failure": 1,
+      "success": 2
+    },
+    {
+      "ip": "192.0.2.10",
+      "failure": 0,
+      "success": 2
+    },
+    {
+      "ip": "2001:db8::10",
+      "failure": 0,
+      "success": 2
+    }
+  ]
+}

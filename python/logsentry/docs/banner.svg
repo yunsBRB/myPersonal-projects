@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330" role="img" aria-labelledby="title desc">
+  <title id="title">LogSentry</title>
+  <desc id="desc">Analyse de connexions en Python. Détection, rapports et tests. Sans dépendance externe.</desc>
+  <rect width="1200" height="330" rx="20" fill="#0c111b"/>
+  <path d="M0 265H1200M0 266H1200" stroke="#29364a"/>
+  <circle cx="1020" cy="127" r="76" fill="none" stroke="#20364a" stroke-width="1"/>
+  <circle cx="1020" cy="127" r="103" fill="none" stroke="#172735" stroke-width="1"/>
+  <path d="M1020 73L1060 89V126C1060 157 1033 175 1020 181C1007 175 980 157 980 126V89Z" fill="#122c2a" stroke="#65e4bd" stroke-width="3"/>
+  <path d="M995 129H1008L1016 109L1028 148L1037 129H1047" fill="none" stroke="#65e4bd" stroke-width="3" stroke-linejoin="round"/>
+  <text x="55" y="61" fill="#65e4bd" font-family="Arial,sans-serif" font-size="13" letter-spacing="3">PYTHON / CYBERSÉCURITÉ DÉFENSIVE</text>
+  <text x="52" y="143" fill="#eaf1fa" font-family="Arial,sans-serif" font-weight="700" font-size="70">Log<tspan fill="#65e4bd">Sentry</tspan></text>
+  <text x="55" y="194" fill="#a3b2c7" font-family="Arial,sans-serif" font-size="23">Comprendre les connexions. Repérer les signaux.</text>
+  <text x="55" y="306" fill="#a3b2c7" font-family="Arial,sans-serif" font-size="15">CLI · RAPPORT HTML · EXPORT JSON · TESTS AUTOMATISÉS</text>
+  <text x="1145" y="306" fill="#65e4bd" font-family="Arial,sans-serif" font-size="14" text-anchor="end">SANS DÉPENDANCE EXTERNE</text>
+</svg>

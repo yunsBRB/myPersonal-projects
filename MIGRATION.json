@@ -1,0 +1,610 @@
+[
+  {
+    "repository": "logsentry",
+    "commit": "1e72ead8a0558be2445b405877bc8ea52579b07e",
+    "source": ".gitignore",
+    "destination": "python/logsentry/.gitignore",
+    "sha": "05079aaf1947843602fe4e7c5f8376a31789c06b",
+    "mode": "100644"
+  },
+  {
+    "repository": "logsentry",
+    "commit": "1e72ead8a0558be2445b405877bc8ea52579b07e",
+    "source": "LICENSE",
+    "destination": "python/logsentry/LICENSE",
+    "sha": "681b03713e4405bf78a0c65b21a21280e4b38737",
+    "mode": "100644"
+  },
+  {
+    "repository": "logsentry",
+    "commit": "1e72ead8a0558be2445b405877bc8ea52579b07e",
+    "source": "README.md",
+    "destination": "python/logsentry/README.md",
+    "sha": "c25c3a9144c82f3f1dfa885ed1bddf371ef6b430",
+    "mode": "100644"
+  },
+  {
+    "repository": "logsentry",
+    "commit": "1e72ead8a0558be2445b405877bc8ea52579b07e",
+    "source": "docs/COMPRENDRE.md",
+    "destination": "python/logsentry/docs/COMPRENDRE.md",
+    "sha": "6a1c4ab8b7ca7bc186257d288c3dcc9554d55336",
+    "mode": "100644"
+  },
+  {
+    "repository": "logsentry",
+    "commit": "1e72ead8a0558be2445b405877bc8ea52579b07e",
+    "source": "docs/PUBLIER.md",
+    "destination": "python/logsentry/docs/PUBLIER.md",
+    "sha": "14914dcf0973779feb08c0edbf20459c455059c9",
+    "mode": "100644"
+  },
+  {
+    "repository": "logsentry",
+    "commit": "1e72ead8a0558be2445b405877bc8ea52579b07e",
+    "source": "docs/banner.svg",
+    "destination": "python/logsentry/docs/banner.svg",
+    "sha": "a7967e2d01d38011eec520c8b8864bf3e8f5a21a",
+    "mode": "100644"
+  },
+  {
+    "repository": "logsentry",
+    "commit": "1e72ead8a0558be2445b405877bc8ea52579b07e",
+    "source": "docs/demo-report.html",
+    "destination": "python/logsentry/docs/demo-report.html",
+    "sha": "4baa64f0b428718de45b1f6d3df62aadd970ff5c",
+    "mode": "100644"
+  },
+  {
+    "repository": "logsentry",
+    "commit": "1e72ead8a0558be2445b405877bc8ea52579b07e",
+    "source": "docs/demo-report.json",
+    "destination": "python/logsentry/docs/demo-report.json",
+    "sha": "3a2c8f94edcb48398dd3d1c715872c83ece3069f",
+    "mode": "100644"
+  },
+  {
+    "repository": "logsentry",
+    "commit": "1e72ead8a0558be2445b405877bc8ea52579b07e",
+    "source": "logsentry/__init__.py",
+    "destination": "python/logsentry/logsentry/__init__.py",
+    "sha": "3464eec35e0b14ce99b7c888cb05482089a367a8",
+    "mode": "100644"
+  },
+  {
+    "repository": "logsentry",
+    "commit": "1e72ead8a0558be2445b405877bc8ea52579b07e",
+    "source": "logsentry/__main__.py",
+    "destination": "python/logsentry/logsentry/__main__.py",
+    "sha": "532eb80276dcf8c5c3c2d7c79ba47e8c9927f4b0",
+    "mode": "100644"
+  },
+  {
+    "repository": "logsentry",
+    "commit": "1e72ead8a0558be2445b405877bc8ea52579b07e",
+    "source": "logsentry/core.py",
+    "destination": "python/logsentry/logsentry/core.py",
+    "sha": "ad382bef0a8c5abf4ef6beb7eb51e85e3da1e9fc",
+    "mode": "100644"
+  },
+  {
+    "repository": "logsentry",
+    "commit": "1e72ead8a0558be2445b405877bc8ea52579b07e",
+    "source": "logsentry/data/demo.csv",
+    "destination": "python/logsentry/logsentry/data/demo.csv",
+    "sha": "06ee980b50a6cf8c6460e1ddda2ca6500befcf10",
+    "mode": "100644"
+  },
+  {
+    "repository": "logsentry",
+    "commit": "1e72ead8a0558be2445b405877bc8ea52579b07e",
+    "source": "logsentry/report.py",
+    "destination": "python/logsentry/logsentry/report.py",
+    "sha": "66a02bf95220eff803ddd181fb97a5bb3fd677fe",
+    "mode": "100644"
+  },
+  {
+    "repository": "logsentry",
+    "commit": "1e72ead8a0558be2445b405877bc8ea52579b07e",
+    "source": "logsentry/template.html",
+    "destination": "python/logsentry/logsentry/template.html",
+    "sha": "7aa748546bca8f917121e5122593f9b55a236d57",
+    "mode": "100644"
+  },
+  {
+    "repository": "logsentry",
+    "commit": "1e72ead8a0558be2445b405877bc8ea52579b07e",
+    "source": "tests/test_cli.py",
+    "destination": "python/logsentry/tests/test_cli.py",
+    "sha": "b3760dc4f130e3365500577a39dd55890c9c1771",
+    "mode": "100644"
+  },
+  {
+    "repository": "logsentry",
+    "commit": "1e72ead8a0558be2445b405877bc8ea52579b07e",
+    "source": "tests/test_core.py",
+    "destination": "python/logsentry/tests/test_core.py",
+    "sha": "7db7c70bb26a816cac43843c28b9fa2328f7ea8f",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "README.md",
+    "destination": "web/nutriscan/README.md",
+    "sha": "0cc53973dcb9cd10138bd18f72570ceb9d115a2c",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "messages/ar.json",
+    "destination": "web/nutriscan/messages/ar.json",
+    "sha": "1f1cec0634efcfea6981fb5fa6e8aa8c7816e5e1",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "messages/en.json",
+    "destination": "web/nutriscan/messages/en.json",
+    "sha": "e3359bd7f5bd3c3bfd4c46e461142204d0097f15",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "messages/fr.json",
+    "destination": "web/nutriscan/messages/fr.json",
+    "sha": "5518411cc413209a06ecdbdf948b3ac7446a523d",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "next-env.d.ts",
+    "destination": "web/nutriscan/next-env.d.ts",
+    "sha": "40c3d68096c270ef976f3db4e9eb42b05c7067bb",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "next.config.mjs",
+    "destination": "web/nutriscan/next.config.mjs",
+    "sha": "725b090fcc4fad76576996508dd860c99f057c5b",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "package.json",
+    "destination": "web/nutriscan/package.json",
+    "sha": "ae5084375c29bea94caf5199dd061af2a8328c90",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "postcss.config.mjs",
+    "destination": "web/nutriscan/postcss.config.mjs",
+    "sha": "1a69fd2a450afc3bf47e08b22c149190df0ffdb4",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "public/manifest.json",
+    "destination": "web/nutriscan/public/manifest.json",
+    "sha": "712dc399d0aabf85e1a0b69dc79040c5175de558",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "public/sw.js",
+    "destination": "web/nutriscan/public/sw.js",
+    "sha": "f4eafbf97184caf291d30732ecf3a75d79be3518",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/app/api/ai/analyze-ingredients/route.ts",
+    "destination": "web/nutriscan/src/app/api/ai/analyze-ingredients/route.ts",
+    "sha": "ac2e3e33d5fe12383eb6eb0b7ffa6d464f72ce1f",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/app/api/alternatives/[barcode]/route.ts",
+    "destination": "web/nutriscan/src/app/api/alternatives/[barcode]/route.ts",
+    "sha": "06ac60ff31fc5b3e50635aae1c10e0a74dd90b8d",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/app/api/scan/[barcode]/route.ts",
+    "destination": "web/nutriscan/src/app/api/scan/[barcode]/route.ts",
+    "sha": "eed257ac70589d6f3362f8cc6715d75191cc0a99",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/app/api/vision/scan-photo/route.ts",
+    "destination": "web/nutriscan/src/app/api/vision/scan-photo/route.ts",
+    "sha": "eaa56f08fae328bf88a1c673c885ec78142025fc",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/app/app/layout.tsx",
+    "destination": "web/nutriscan/src/app/app/layout.tsx",
+    "sha": "1181fab6b5facc1a5f2d1e3f8bbfc1d891f35ada",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/app/app/page.tsx",
+    "destination": "web/nutriscan/src/app/app/page.tsx",
+    "sha": "9609a5654c353b2be030ade1b01ad81619b15248",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/app/app/premium/page.tsx",
+    "destination": "web/nutriscan/src/app/app/premium/page.tsx",
+    "sha": "95a6c86fc01f2c57ec9818321bdc7de0e99aa96b",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/app/app/product/[barcode]/page.tsx",
+    "destination": "web/nutriscan/src/app/app/product/[barcode]/page.tsx",
+    "sha": "af785b988d49773812fc1ac817c30dad8edd29b5",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/app/app/profil/page.tsx",
+    "destination": "web/nutriscan/src/app/app/profil/page.tsx",
+    "sha": "a706a46edaf6abeee4d371e7f97bf67ac91e678b",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/app/app/scan/page.tsx",
+    "destination": "web/nutriscan/src/app/app/scan/page.tsx",
+    "sha": "dcc2bd2d86aedf444d33d043ac3460b8cb7c659e",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/app/auth/layout.tsx",
+    "destination": "web/nutriscan/src/app/auth/layout.tsx",
+    "sha": "1c9c1e8e83d18b4f85e98d1e977cb7c70709ec58",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/app/auth/login/page.tsx",
+    "destination": "web/nutriscan/src/app/auth/login/page.tsx",
+    "sha": "713c60fd5939d845eaf0e0acec07df67670cf1cc",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/app/auth/register/page.tsx",
+    "destination": "web/nutriscan/src/app/auth/register/page.tsx",
+    "sha": "0c3b7e99860733f414ac57c3f731b90bf16f5ad1",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/app/favicon.ico",
+    "destination": "web/nutriscan/src/app/favicon.ico",
+    "sha": "718d6fea4835ec2d246af9800eddb7ffb276240c",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/app/fonts/GeistMonoVF.woff",
+    "destination": "web/nutriscan/src/app/fonts/GeistMonoVF.woff",
+    "sha": "f2ae185cbfd16946a534d819e9eb03924abbcc49",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/app/fonts/GeistVF.woff",
+    "destination": "web/nutriscan/src/app/fonts/GeistVF.woff",
+    "sha": "1b62daacff96dad6584e71cd962051b82957c313",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/app/globals.css",
+    "destination": "web/nutriscan/src/app/globals.css",
+    "sha": "9de0dfebf0acef0dd7ee6c45cec0f5dfda8fb3e3",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/app/layout.tsx",
+    "destination": "web/nutriscan/src/app/layout.tsx",
+    "sha": "0502f8877471f3f0fdbf8fb2b249ea17289c4013",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/app/page.tsx",
+    "destination": "web/nutriscan/src/app/page.tsx",
+    "sha": "6fe62d19b42eddd6326cfd46829c3501e4e5debc",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/app/sitemap.ts",
+    "destination": "web/nutriscan/src/app/sitemap.ts",
+    "sha": "53035333afc7e090600864c08af1bf39502e29a6",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/components/PremiumGate.tsx",
+    "destination": "web/nutriscan/src/components/PremiumGate.tsx",
+    "sha": "f4b85caa33223e630b1a60271b43af27c8e9ca60",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/components/layout/BottomNav.tsx",
+    "destination": "web/nutriscan/src/components/layout/BottomNav.tsx",
+    "sha": "7f2c4b2a7410c47987a769639a5cfa0a36bf27e3",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/components/layout/Header.tsx",
+    "destination": "web/nutriscan/src/components/layout/Header.tsx",
+    "sha": "3cb839e79a8b8d1346f026d2f41853f973849000",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/components/ui/accordion.tsx",
+    "destination": "web/nutriscan/src/components/ui/accordion.tsx",
+    "sha": "24c788c2c44cb058812cdbb97d071439a87af5f0",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/components/ui/avatar.tsx",
+    "destination": "web/nutriscan/src/components/ui/avatar.tsx",
+    "sha": "51e507ba9d08bcdbb1fb630498f1cbdf2bf50093",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/components/ui/badge.tsx",
+    "destination": "web/nutriscan/src/components/ui/badge.tsx",
+    "sha": "f000e3ef5176395b067dfc3f3e1256a80c450015",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/components/ui/button.tsx",
+    "destination": "web/nutriscan/src/components/ui/button.tsx",
+    "sha": "36496a28727a3643b4212a14225d4f6cbd50bda5",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/components/ui/card.tsx",
+    "destination": "web/nutriscan/src/components/ui/card.tsx",
+    "sha": "f62edea578d50058bef5e6bcc178b88d145564e9",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/components/ui/input.tsx",
+    "destination": "web/nutriscan/src/components/ui/input.tsx",
+    "sha": "68551b9276b4164a8263aa58d385db30f81a4453",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/components/ui/label.tsx",
+    "destination": "web/nutriscan/src/components/ui/label.tsx",
+    "sha": "534182176bf87f9308355514adc884d2b69750a5",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/components/ui/progress.tsx",
+    "destination": "web/nutriscan/src/components/ui/progress.tsx",
+    "sha": "5c87ea4865610374cdc591d1619157b4d8909a87",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/components/ui/skeleton.tsx",
+    "destination": "web/nutriscan/src/components/ui/skeleton.tsx",
+    "sha": "01b8b6d4f716ff7c26065bc9e46aebd932729fc1",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/components/ui/tabs.tsx",
+    "destination": "web/nutriscan/src/components/ui/tabs.tsx",
+    "sha": "26eb109120e2ee43feddb68900f353a119976c41",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/components/ui/toast.tsx",
+    "destination": "web/nutriscan/src/components/ui/toast.tsx",
+    "sha": "521b94b07981916e3ee36e8cc28a70b4d9abc728",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/components/ui/toaster.tsx",
+    "destination": "web/nutriscan/src/components/ui/toaster.tsx",
+    "sha": "977302085db8a938a6903784905c9c73d28dda75",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/hooks/use-toast.ts",
+    "destination": "web/nutriscan/src/hooks/use-toast.ts",
+    "sha": "02e111d81dd774038ac483c11b5f5a8f8aceb024",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/i18n/request.ts",
+    "destination": "web/nutriscan/src/i18n/request.ts",
+    "sha": "d4f2f4832c5f0458a00555b76a131ff8522610d8",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/lib/api/normalizeProduct.ts",
+    "destination": "web/nutriscan/src/lib/api/normalizeProduct.ts",
+    "sha": "bfacd02d8615a40cf99ff9b2ede57bad6e67e1f0",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/lib/store/userStore.ts",
+    "destination": "web/nutriscan/src/lib/store/userStore.ts",
+    "sha": "f8c421f4b4fd7bcbfb4bbb6f96723fa79f2104b2",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "src/lib/utils.ts",
+    "destination": "web/nutriscan/src/lib/utils.ts",
+    "sha": "e9c8f2e06dd4ca662d51e9618d577e548f9d2a87",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "supabase/functions/calculate-score/index.ts",
+    "destination": "web/nutriscan/supabase/functions/calculate-score/index.ts",
+    "sha": "10129730cd0998dd7732086dbaf6ff947a128746",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "supabase/migrations/20240304000000_init.sql",
+    "destination": "web/nutriscan/supabase/migrations/20240304000000_init.sql",
+    "sha": "906edd0ba6fe8aebdd0b2f77987aaea9fb626492",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "tailwind.config.ts",
+    "destination": "web/nutriscan/tailwind.config.ts",
+    "sha": "72a61aae50d0413ae0623425f5ae4acfc38daafb",
+    "mode": "100644"
+  },
+  {
+    "repository": "nutriscan",
+    "commit": "634a6b8d32aba8fdb74ef312cbc7f16647033ecc",
+    "source": "tsconfig.json",
+    "destination": "web/nutriscan/tsconfig.json",
+    "sha": "7b2858930495fc4a76d7a51d958bacf2d64eb81f",
+    "mode": "100644"
+  },
+  {
+    "repository": "SuperMario",
+    "commit": "eacaced92259969c9af8e29811a9e47fcb75921a",
+    "source": "README.md",
+    "destination": "web/super-mario/README.md",
+    "sha": "eef7de7d7e5f0a8dc0919864cce637a56298ff6b",
+    "mode": "100644"
+  },
+  {
+    "repository": "SuperMario",
+    "commit": "eacaced92259969c9af8e29811a9e47fcb75921a",
+    "source": "game.js",
+    "destination": "web/super-mario/game.js",
+    "sha": "0a9892806b739b32951c5fec8b76b425e72f701f",
+    "mode": "100644"
+  },
+  {
+    "repository": "SuperMario",
+    "commit": "eacaced92259969c9af8e29811a9e47fcb75921a",
+    "source": "index.html",
+    "destination": "web/super-mario/index.html",
+    "sha": "62fc41b48db39980f8db78916c69829932cc4dce",
+    "mode": "100644"
+  },
+  {
+    "repository": "SuperMario",
+    "commit": "eacaced92259969c9af8e29811a9e47fcb75921a",
+    "source": "style.css",
+    "destination": "web/super-mario/style.css",
+    "sha": "31f767fbdb0f77b7bd01bb98996ab9704c0da1ea",
+    "mode": "100644"
+  },
+  {
+    "repository": "programming-lab",
+    "commit": "cfb9aaa1c92501627324efc501872b68f0cbdcdd",
+    "source": "projects/orbit-animation/README.md",
+    "destination": "web/orbit-animation/README.md",
+    "sha": "72fb4d9f8109e51e455f46d2d2987f7a654d04e2",
+    "mode": "100644"
+  },
+  {
+    "repository": "programming-lab",
+    "commit": "cfb9aaa1c92501627324efc501872b68f0cbdcdd",
+    "source": "projects/orbit-animation/index.html",
+    "destination": "web/orbit-animation/index.html",
+    "sha": "f982d09b9c60102840202a6d333b7569e174c683",
+    "mode": "100644"
+  }
+]

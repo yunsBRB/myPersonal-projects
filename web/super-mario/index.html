@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super Mario - by yunsBRB</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-container">
+    <div id="hud">
+      <span>yunsBRB</span>
+      <span id="score">000000</span>
+      <span>&#9733; <span id="lives">3</span></span>
+      <span>COINS: <span id="coins">0</span></span>
+      <span>WORLD 1-1</span>
+      <span>TIME: <span id="timer">400</span></span>
+    </div>
+
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="overlay">
+      <h1 id="overlay-title">SUPER MARIO</h1>
+      <p style="color: #f8c800; font-weight: bold; font-size: 20px; margin-bottom: 15px; letter-spacing: 1px;">by yunsBRB</p>
+      <p id="overlay-msg">Arrow Keys / WASD to move<br>Space / Up / W to jump<br>Double-tap jump <b>OR</b> Shift+Jump for SUPER JUMP</p>
+      <button id="overlay-btn">START GAME</button>
+    </div>
+  </div>
+  
+  <script src="game.js" defer></script>
+</body>
+</html>

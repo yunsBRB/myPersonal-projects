@@ -1,0 +1,24 @@
+{
+    "home": {
+        "title": "Explorer par besoin",
+        "scan_cta": "Scanner un produit"
+    },
+    "scan": {
+        "instruction": "Placez le code-barres dans le cadre",
+        "not_found": "Produit introuvable"
+    },
+    "product": {
+        "nutriscore": "Nutri-Score",
+        "nova": "Groupe NOVA",
+        "additives": "Additifs détectés",
+        "allergens": "Allergènes"
+    },
+    "premium": {
+        "title": "Passez au niveau supérieur",
+        "features": {
+            "ai_analysis": "Analyse IA des ingrédients",
+            "alternatives": "Alternatives saines illimitées",
+            "health_impact": "Impact Santé détaillé"
+        }
+    }
+}
