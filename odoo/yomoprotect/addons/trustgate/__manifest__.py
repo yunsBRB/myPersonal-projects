@@ -1,4 +1,4 @@
-{'name': 'TrustGate',
+{'name': 'YomoProtect',
  'version': '20.0.1.0.0',
  'summary': 'Supplier payment risk review',
  'category': 'Accounting',

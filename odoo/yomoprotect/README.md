@@ -14,7 +14,7 @@ docker compose run --rm odoo --addons-path=/opt/odoo/addons,/mnt/extra-addons --
 docker compose up -d
 ```
 
-Open http://localhost:8069. Sign in with `admin` / `admin` on the new development database and change that password. In developer mode, assign **TrustGate Operator** to requesters and **TrustGate Reviewer** to reviewers. Add a supplier bank account, then open **TrustGate → Payment Reviews**.
+Open http://localhost:8069. Sign in with `admin` / `admin` on the new development database and change that password. In developer mode, assign **YomoProtect Operator** to requesters and **YomoProtect Reviewer** to reviewers. Add a supplier bank account, then open **YomoProtect → Payment Reviews**.
 
 ## Review rules
 
