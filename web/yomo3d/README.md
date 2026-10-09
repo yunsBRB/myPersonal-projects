@@ -8,7 +8,15 @@ YOMO 3D prépare des photos et des vidéos de lieux pour une reconstruction 3D f
 
 ## Interface actuelle
 
-Le code source des templates est disponible dans ce dossier. Les quatre captures d'écran réelles de la version locale restent dans l'archive d'origine et ne sont pas encore publiées sur GitHub. Aucune capture ne représente une reconstruction 3D.
+Les captures ci-dessous proviennent de l'application locale ; elles illustrent l'interface avec des données de démonstration, et non une reconstruction 3D.
+
+| Accueil | Projet |
+| --- | --- |
+| ![Page d'accueil YOMO 3D](docs/assets/landing.png) | ![Page d'un projet](docs/assets/project.png) |
+
+| Dashboard | Mobile |
+| --- | --- |
+| ![Dashboard utilisateur](docs/assets/dashboard.png) | ![Affichage sur mobile](docs/assets/mobile.png) |
 
 ## Ce qui fonctionne
 
