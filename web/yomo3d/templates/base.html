@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="YOMO 3D — Des lieux réels, une nouvelle manière de les découvrir.">
+  <meta name="csrf-token" content="{{ csrf }}">
+  <title>{% block title %}YOMO 3D{% endblock %} — YOMO 3D</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body data-page="{% block page %}base{% endblock %}">
+  <div class="site-shell">
+    <header class="topbar">
+      <a href="/" class="brand" aria-label="YOMO 3D, accueil"><span class="brand-glyph">Y</span> YOMO<span class="brand-accent">3D</span></a>
+      <nav class="nav-links" aria-label="Navigation principale">
+        <a href="/#solution">La solution</a>
+        <a href="/#secteurs">Secteurs</a>
+        {% if user %}
+          <a href="/app">Mes projets</a><button type="button" class="nav-logout" data-logout>Déconnexion</button>
+        {% else %}
+          <a href="/login">Connexion</a><a href="/signup" class="nav-cta">Accéder à YOMO <span aria-hidden="true">↗</span></a>
+        {% endif %}
+      </nav>
+    </header>
+    <main>{% block content %}{% endblock %}</main>
+    <footer class="footer"><span>© YOMO 3D — Construire des expériences à partir du réel.</span><span>Préversion technique · Traitement 3D sous conditions</span></footer>
+  </div>
+</body>
+</html>

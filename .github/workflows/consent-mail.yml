@@ -1,0 +1,23 @@
+name: Consent Mail
+on:
+  push:
+    paths: ['java/consent-mail/**', '.github/workflows/consent-mail.yml']
+  pull_request:
+    paths: ['java/consent-mail/**', '.github/workflows/consent-mail.yml']
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: java/consent-mail
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: maven
+          cache-dependency-path: java/consent-mail/pom.xml
+      - run: mvn --batch-mode verify

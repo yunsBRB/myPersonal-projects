@@ -1,0 +1,29 @@
+<odoo>
+    <record id="crm_lead_form_qualification" model="ir.ui.view">
+        <field name="name">crm.lead.form.qualification</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Qualification" name="qualification">
+                    <group>
+                        <group string="Signals">
+                            <field name="qualification_target_sector"/>
+                            <field name="qualification_employee_count"/>
+                            <field name="qualification_demo_requested"/>
+                            <field name="qualification_business_email"/>
+                            <field name="qualification_contact_date"/>
+                        </group>
+                        <group string="Assessment">
+                            <field name="qualification_score" widget="crm_lead_qualification_score"/>
+                            <field name="qualification_priority"/>
+                            <field name="qualification_reasons"/>
+                            <button name="action_apply_qualification_priority" type="object" string="Apply Suggested Priority" class="btn-primary"/>
+                        </group>
+                    </group>
+                    <p class="text-muted">Qualification supports sales triage. It does not change Odoo's predicted win probability.</p>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

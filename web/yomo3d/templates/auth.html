@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}{% if mode == 'login' %}Connexion{% else %}Inscription{% endif %}{% endblock %}
+{% block page %}auth{% endblock %}
+{% block content %}
+<section class="auth-layout container"><div class="auth-aside"><span class="eyebrow">L'ESPACE DE TRAVAIL YOMO</span><h1>Donnez de la<br><em>profondeur</em><br>à vos lieux.</h1><p>Un projet. Vos captures. Un workflow clair, de l'import au modèle 3D lorsque l'infrastructure le permet.</p><span class="abstract-mark">Y.</span></div>
+<div class="auth-panel"><span class="eyebrow">{{ 'BON RETOUR' if mode == 'login' else 'REJOINDRE YOMO' }}</span><h2>{{ 'Se connecter' if mode == 'login' else 'Créer un compte' }}</h2><p>{{ 'Accédez à votre espace privé.' if mode == 'login' else 'Organisez les premiers médias de votre établissement.' }}</p>
+<form id="auth-form" data-mode="{{ mode }}" class="form-stack"><label>Adresse e-mail<input required type="email" name="email" autocomplete="email" placeholder="vous@exemple.fr" maxlength="254"></label><label>Mot de passe<input required type="password" name="password" autocomplete="{{ 'current-password' if mode == 'login' else 'new-password' }}" minlength="{{ 1 if mode == 'login' else 12 }}" placeholder="{{ 'Votre mot de passe' if mode == 'login' else '12 caractères minimum' }}"></label><p id="auth-error" role="alert" class="form-error" hidden></p><button type="submit" class="button primary full">{{ 'Se connecter' if mode == 'login' else 'Créer mon compte' }} <span>→</span></button></form>
+<p class="switch-auth">{{ 'Nouveau sur YOMO ?' if mode == 'login' else 'Déjà un compte ?' }} <a href="{{ '/signup' if mode == 'login' else '/login' }}">{{ "Créer un compte" if mode == 'login' else 'Se connecter' }}</a></p></div></section>
+{% endblock %}

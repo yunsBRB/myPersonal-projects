@@ -1,0 +1,14 @@
+* { box-sizing: border-box; }
+    body { margin: 0; background: #f5f4f0; color: #202b32; font: 16px/1.6 system-ui, sans-serif; }
+    main { max-width: 960px; margin: 64px auto; padding: 0 24px; }
+    header { border-bottom: 2px solid #274c45; margin-bottom: 32px; padding-bottom: 24px; }
+    h1 { font-size: 38px; letter-spacing: -1px; margin: 0; }
+    h2 { font-size: 20px; }
+    .eyebrow { color: #526961; font-size: 13px; text-transform: uppercase; letter-spacing: 2px; }
+    section { background: white; border: 1px solid #d9ded9; padding: 24px; margin: 20px 0; }
+    button { background: #274c45; color: white; border: 0; padding: 12px 18px; cursor: pointer; font: inherit; }
+    button:disabled { opacity: .5; }
+    textarea { width: 100%; min-height: 210px; padding: 16px; border: 1px solid #bac9bf; font: 14px/1.5 monospace; }
+    pre { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 14px; }
+    a { color: #274c45; }
+    .muted { color: #526961; }

@@ -1,0 +1,62 @@
+name: Verify
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_DB: app
+          POSTGRES_USER: app
+          POSTGRES_PASSWORD: ci-local-only
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U app -d app"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: maven
+      - run: mvn --batch-mode verify
+      - name: Exercise authenticated demo
+        run: |
+          java -jar target/consent-mail-0.1.0-SNAPSHOT.jar --spring.profiles.active=demo > app.log 2>&1 &
+          app_pid=$!
+          trap 'kill "$app_pid" 2>/dev/null || true; wait "$app_pid" 2>/dev/null || true' EXIT
+          for attempt in {1..40}; do
+            if curl --silent --fail http://127.0.0.1:8082/login > /dev/null; then break; fi
+            sleep 1
+          done
+          python3 scripts/demo.py
+      - name: Show application log on failure
+        if: failure()
+        run: cat app.log 2>/dev/null || true
+      - name: Exercise PostgreSQL persistence
+        env:
+          DATABASE_URL: jdbc:postgresql://localhost:5432/app
+          DATABASE_PASSWORD: ci-local-only
+          OPERATOR_PASSWORD: operator-local
+          REVIEWER_PASSWORD: reviewer-local
+          ADMIN_PASSWORD: admin-local
+          CONTACT_ENCRYPTION_KEY: MDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWY=
+        run: |
+          java -jar target/consent-mail-0.1.0-SNAPSHOT.jar > postgres-app.log 2>&1 &
+          app_pid=$!
+          trap 'kill "$app_pid" 2>/dev/null || true; wait "$app_pid" 2>/dev/null || true' EXIT
+          for attempt in {1..40}; do
+            if curl --silent --fail http://127.0.0.1:8082/login > /dev/null; then break; fi
+            sleep 1
+          done
+          python3 scripts/demo.py
+      - name: Show PostgreSQL log on failure
+        if: failure()
+        run: cat postgres-app.log 2>/dev/null || true

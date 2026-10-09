@@ -1,0 +1,12 @@
+{'name': 'Odoo Lead Scoring',
+ 'version': '20.0.1.0.0',
+ 'summary': 'Explainable CRM qualification',
+ 'category': 'Sales/CRM',
+ 'author': 'Younes Berebia',
+ 'license': 'LGPL-3',
+ 'depends': ['crm', 'web'],
+ 'data': ['views/crm_lead_views.xml'],
+ 'assets': {'web.assets_backend': ['crm_lead_qualification/static/src/score_field.js',
+                                   'crm_lead_qualification/static/src/score_field.xml']},
+ 'application': False,
+ 'installable': True}

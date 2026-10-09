@@ -1,0 +1,21 @@
+services:
+  web:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment: &env
+      YOMO_ENV: development
+      YOMO_DATABASE_URL: sqlite:////app/data/yomo.db
+      YOMO_STORAGE_DIR: /app/data/private
+      YOMO_ENABLE_GPU: "false"
+    volumes:
+      - yomo_data:/app/data
+  worker:
+    build: .
+    command: ["python", "-m", "yomo.worker"]
+    environment: *env
+    volumes:
+      - yomo_data:/app/data
+    restart: unless-stopped
+volumes:
+  yomo_data:

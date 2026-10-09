@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Consent Mail</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body><main><header><p class="eyebrow">Business systems / Local prototype</p><h1>Consent Mail</h1><p>Record consent by purpose, confirm it explicitly and exclude withdrawn contacts from campaign previews.</p></header>
+<p id="session" class="muted"></p>
+<section><h2>Try a request</h2><p>Review the sample, then submit it to the local API.</p><form id="demo"><label for="request">Request body</label><textarea id="request" spellcheck="false">{
+  "email": "demo@example.com",
+  "purpose": "newsletter",
+  "noticeVersion": "notice-v1",
+  "source": "local-demo"
+}</textarea><p><button type="submit">Run example</button></p></form><pre id="result" aria-live="polite">Ready.</pre></section>
+<section><h2>Consent lifecycle</h2><p>Tokens are returned once for this local demonstration. Confirm a subscription, preview a matching campaign, then withdraw consent and preview again.</p><a href="/api/subscriptions">View subscriptions</a></section><p class="muted">Demonstration data only. No real emails or payments are sent.</p></main></body></html>

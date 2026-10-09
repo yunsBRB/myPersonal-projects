@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Des lieux réels, autrement{% endblock %}
+{% block page %}home{% endblock %}
+{% block content %}
+<section class="hero container">
+  <div class="hero-copy">
+    <span class="eyebrow"><span class="eyebrow-line"></span> UNE NOUVELLE PERSPECTIVE DU RÉEL</span>
+    <h1>Vos espaces méritent<br>plus qu’une <em>image.</em></h1>
+    <p class="hero-description">Préparez vos photos et vidéos pour une future visite 3D fidèle à votre établissement. Un espace de travail pensé pour l'immobilier et l'hospitalité.</p>
+    <div class="hero-actions"><a href="/signup" class="button primary">Créer mon espace <span aria-hidden="true">↗</span></a><a href="#solution" class="button ghost">Découvrir la méthode <span aria-hidden="true">↓</span></a></div>
+    <p class="small-note">Version fondation disponible · Reconstruction GPU et export vidéo en développement</p>
+  </div>
+  <div class="hero-visual" aria-label="Illustration abstraite d'un espace architectural, non issue d'une reconstruction">
+    <div class="architecture">
+      <div class="arch-back"></div><div class="arch-center"></div><div class="arch-right"></div><div class="arch-floor"></div>
+      <div class="architecture-label"><span>01 / 03</span><span>De la capture à l'expérience</span></div>
+    </div>
+    <div class="floating-index">L'ESPACE<br><strong>EN PERSPECTIVE</strong></div>
+  </div>
+</section>
+<section id="solution" class="section container">
+  <div class="section-heading"><div><span class="eyebrow">01 — LA MÉTHODE</span><h2>Capturer. Reconstruire.<br><em>Faire découvrir.</em></h2></div><p>Un parcours simple, avec des étapes de calcul réelles et des limites transparentes.</p></div>
+  <div class="steps-grid">
+    <article class="step-card"><span class="step-number">01</span><h3>Capturer votre lieu</h3><p>Importez vos prises de vue. Les fichiers sont validés et conservés dans votre espace privé.</p><span class="feature-status available">Disponible</span></article>
+    <article class="step-card"><span class="step-number">02</span><h3>Préparer les données</h3><p>Les photos sont normalisées, les vidéos découpées en images exploitables pour la suite.</p><span class="feature-status available">Disponible via worker local</span></article>
+    <article class="step-card"><span class="step-number">03</span><h3>Explorer et présenter</h3><p>Reconstruction 3D, visite interactive et vidéo cinématique lorsque le moteur GPU sera intégré et validé.</p><span class="feature-status roadmap">Étapes suivantes</span></article>
+  </div>
+</section>
+<section id="secteurs" class="sectors section container"><div class="section-heading"><div><span class="eyebrow">02 — LES USAGES</span><h2>Un outil. Plusieurs<br><em>façons de raconter.</em></h2></div></div>
+  <div class="sector-grid"><div class="sector-card"><span>01 / HOSPITALITÉ</span><h3>Yomo<span>BNB</span></h3><p>Appartements, villas et locations de courte durée.</p></div><div class="sector-card second"><span>02 / GASTRONOMIE</span><h3>Yomo<span>Resto</span></h3><p>Restaurants, cafés et lieux de rencontre.</p></div></div>
+</section>
+<section class="cta-band"><div class="container cta-content"><div><span class="eyebrow">COMMENCER</span><h2>Construisons le prochain<br>regard sur votre lieu.</h2></div><a href="/signup" class="button light">Créer un projet <span aria-hidden="true">↗</span></a></div></section>
+{% endblock %}
