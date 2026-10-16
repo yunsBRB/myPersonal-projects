@@ -6,10 +6,10 @@ A collection of self-contained personal applications and technical prototypes.
 
 | Project | Folder | Scope | Status |
 | --- | --- | --- | --- |
-| **YOMO 3D** | [web/yomo3D](web/yomo3D) | Media ingestion and foundations for 3D property tours | Foundation v0.1; GPU reconstruction not validated |
-| **YomoProtect** | [odoo/yomoProtect](odoo/yomoProtect) | Payment-request risk reviews in Odoo | Local prototype; technical add-on ID: `trustgate` |
+| **yomo3D** | [web/yomo3D](web/yomo3D) | Media ingestion and foundations for 3D property tours | Foundation v0.1; GPU reconstruction not validated |
+| **yomoProtect** | [odoo/yomoProtect](odoo/yomoProtect) | Payment-request risk reviews in Odoo | Local prototype; technical add-on ID: `trustgate` |
 | **Odoo Lead Scoring** | [odoo/lead-scoring](odoo/lead-scoring) | Explainable qualification for CRM leads | Local prototype |
-| **YomoConsent** | [java/yomoConsent](java/yomoConsent) | Consent management and campaign-audience previews | Local prototype |
+| **yomoConsent** | [java/yomoConsent](java/yomoConsent) | Consent management and campaign-audience previews | Local prototype |
 
 ## Other projects
 
