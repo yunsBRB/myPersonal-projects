@@ -1,9 +1,9 @@
 name: YOMO 3D
 on:
   push:
-    paths: ['web/yomo3d/**', '.github/workflows/yomo3d.yml']
+    paths: ['web/yomo3D/**', '.github/workflows/yomo3D.yml']
   pull_request:
-    paths: ['web/yomo3d/**', '.github/workflows/yomo3d.yml']
+    paths: ['web/yomo3D/**', '.github/workflows/yomo3D.yml']
 permissions:
   contents: read
 jobs:
@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: web/yomo3d
+        working-directory: web/yomo3D
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

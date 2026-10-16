@@ -1,4 +1,4 @@
-# Consent Mail
+# YomoConsent
 
 Consent records and campaign audience previews.
 
