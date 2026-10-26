@@ -24,10 +24,10 @@ A collection of self-contained personal applications and technical prototypes.
 
 Each project has its own README and dependencies. Run commands from the project folder, not the monorepo root.
 
-- `java/` — Java and Spring projects
-- `odoo/` — Odoo add-ons
-- `python/` — Python tools
-- `web/` — web applications and prototypes
+- `java/`  Java and Spring projects
+- `odoo/`  Odoo add-ons
+- `python/`  Python tools
+- `web/`  web applications and prototypes
 
 The monorepo keeps the project copies used by the public portfolio. Some projects also have private individual repositories with their original Git history.
 
